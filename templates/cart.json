@@ -3,6 +3,16 @@
     "template": {
       "type": "template-cart",
       "blocks": {
+        "4e1b612a-d340-4936-9f9c-c4d6350c7b3c": {
+          "type": "checkout_button",
+          "settings": {
+          }
+        },
+        "d762ad27-67ad-45f0-8024-b08b84180947": {
+          "type": "update_button",
+          "settings": {
+          }
+        },
         "153cf970-8a48-4ffa-99f0-14adebfab7fc": {
           "type": "subtotal",
           "settings": {
@@ -10,6 +20,8 @@
         }
       },
       "block_order": [
+        "4e1b612a-d340-4936-9f9c-c4d6350c7b3c",
+        "d762ad27-67ad-45f0-8024-b08b84180947",
         "153cf970-8a48-4ffa-99f0-14adebfab7fc"
       ],
       "settings": {
