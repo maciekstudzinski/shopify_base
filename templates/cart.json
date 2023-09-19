@@ -7,10 +7,22 @@
           "type": "subtotal",
           "settings": {
           }
+        },
+        "dd6574de-725a-4da3-b6bf-17a20d91a77b": {
+          "type": "update_button",
+          "settings": {
+          }
+        },
+        "20226fa3-4cb7-43d4-bc44-2220ae100171": {
+          "type": "checkout_button",
+          "settings": {
+          }
         }
       },
       "block_order": [
-        "153cf970-8a48-4ffa-99f0-14adebfab7fc"
+        "153cf970-8a48-4ffa-99f0-14adebfab7fc",
+        "dd6574de-725a-4da3-b6bf-17a20d91a77b",
+        "20226fa3-4cb7-43d4-bc44-2220ae100171"
       ],
       "settings": {
       }
