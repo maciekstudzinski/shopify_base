@@ -1,11 +1,7 @@
-<style>
-  .not-found-template {}
-</style>
-
 <div class="max-w-md">
-  <h1 class="text-5xl font-bold my-4 text-center">{{ section.settings.title }}</h1>
+  <div class="text-5xl font-bold my-4">{{ section.settings.title }}</div>
   <div class="my-4">
-    <p class="text-base d:text-xl leading-normal">{{ section.settings.subtext_title }}</p>
+    <p class="text-base md:text-xl leading-normal">{{ section.settings.subtext_title }}</p>
   </div>
   <div class="my-4">
     {% if section.settings.button_url == blank %}
@@ -13,35 +9,36 @@
     {% else %}
       {% assign shop_url = section.settings.button_url %}
     {% endif %}
-    <a href="{{shop_url}}" class="px-4 py-[10px] text-base font-medium shadow bg-green-600 text-white hover:bg-green-800">{{ section.settings.button_label }}</a>
+    <a href="{{ shop_url }}" class="px-4 inline py-2 text-base font-medium shadow bg-green-600 hover:bg-green-800 text-white">{{ section.settings.button_label }}</a>
   </div>
+
 </div>
 
 {% schema %}
   {
     "name": "Template 404",
     "tag": "section",
-    "class": "not-found-template flex items-center justify-center text-center h-[100vh]",
+    "class": "flex items-center justify-center text-center py-7 h-screen",
     "settings": [
       {
         "type": "text",
         "id": "title",
         "default": "404",
-        "label": "404 heading title"
+        "label": "404 Heading Title"
       }, {
         "type": "text",
         "id": "subtext_title",
-        "default": "The page you're looking for was not found.",
-        "label": "404 subttext title"
+        "default": "The page that you're looking for is not found",
+        "label": "404 Subtext Title"
       }, {
         "type": "text",
         "id": "button_label",
-        "default": "Back to home page",
-        "label": "Home button label"
+        "default": "Back to homepage",
+        "label": "Button Label"
       }, {
         "type": "url",
         "id": "button_url",
-        "label": "Button url"
+        "label": "Button URL"
       }
     ]
   }
