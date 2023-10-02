@@ -5,7 +5,11 @@
       "settings": {
         "featured_collection": "all"
       }
+    },
+
+    "contact-form": {
+      "type": "contact-form"
     }
   },
-  "order": ["featured-collections"]
+  "order": ["featured-collections", "contact-form"]
 }
